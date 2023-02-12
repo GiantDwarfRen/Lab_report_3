@@ -3,8 +3,10 @@ written_2/travel_guides/berlitz2/Algarve-Intro.txt
 written_2/travel_guides/berlitz2/Algarve-WhatToDo.txt
 written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt
 written_2/travel_guides/berlitz2/Amsterdam-History.txt
+written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
 written_2/travel_guides/berlitz2/Amsterdam-WhatToDo.txt
 written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt
+written_2/travel_guides/berlitz2/Athens-History.txt
 written_2/travel_guides/berlitz2/Athens-Intro.txt
 written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
 written_2/travel_guides/berlitz2/Athens-WhereToGo.txt
@@ -22,6 +24,7 @@ written_2/travel_guides/berlitz2/Beijing-History.txt
 written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
 written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
 written_2/travel_guides/berlitz2/Berlin-History.txt
+written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt
 written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt
 written_2/travel_guides/berlitz2/Bermuda-WhatToDo.txt
 written_2/travel_guides/berlitz2/Bermuda-WhereToGo.txt
@@ -31,6 +34,7 @@ written_2/travel_guides/berlitz2/Budapest-History.txt
 written_2/travel_guides/berlitz2/Budapest-WhatToDo.txt
 written_2/travel_guides/berlitz2/Budapest-WhereoGo.txt
 written_2/travel_guides/berlitz2/California-History.txt
+written_2/travel_guides/berlitz2/California-WhatToDo.txt
 written_2/travel_guides/berlitz2/California-WhereToGo.txt
 written_2/travel_guides/berlitz2/Canada-History.txt
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
@@ -48,6 +52,7 @@ written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
 written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
 written_2/travel_guides/berlitz2/CostaBlanca-History.txt
 written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-History.txt
 written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
 written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
 written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt
