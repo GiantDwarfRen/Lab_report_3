@@ -43,3 +43,28 @@ vincentren@ Lab_report_3 % wc grep-result-invert.txt
 vincentren@ Lab_report_3 % wc grep-result.txt 
       73      73    3945 grep-result.txt
 ```
+
+## -n, --line-number
+Prefix each line of output with the 1-based line number within its input file.
+1. Using `-n`, we can know the line number of "vista"
+```
+vincentren@ Lab_report_3 % grep -rn "vista" > grep-result.txt
+vincentren@ Lab_report_3 % cat grep-result.txt 
+./written_2/travel_guides/berlitz1/IntroDublin.txt:40:        unexpected distant vistas will remind you that Dublin is by the sea,
+./written_2/travel_guides/berlitz1/IntroMadeira.txt:86:        rewarded with spectacular vistas can be an exhilarating experience, but
+./written_2/travel_guides/berlitz1/WhereToGreek.txt:172:        ancient port, now silted up. From here, the vista of the whole town can
+./written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:466:        Harrison Stickle and Crinkle Crags — produce some of the finest vistas
+./written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:894:        View,” a lookout that offers a panoramic vista of Derwent Water with
+./written_2/travel_guides/berlitz1/WhereToIsrael.txt:1054:        rolling vistas of sand dunes, but is instead a rocky wasteland of
+./written_2/travel_guides/berlitz1/WhereToFrance.txt:286:        vista was originally planned for Napo­leon to see from his bedroom in
+./written_2/travel_guides/berlitz1/WhereToFrance.txt:2206:        The little port town of Cancale — with a wide vista across
+...
+```
+
+2. Using `-n`, we can konw the line number of "Lucayans"
+```
+vincentren@ Lab_report_3 % grep -rn "Lucayans" > grep-result.txt
+vincentren@ Lab_report_3 % cat grep-result.txt 
+./written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arrival of Columbus, a peaceful...
+./written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but...
+```
