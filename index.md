@@ -1,7 +1,9 @@
 # Lab Report 3
 Here is the [website](https://man7.org/linux/man-pages/man1/grep.1.html) that I found command-line option for `grep`
 ## -i, --ignore-case
-Ignore case distinctions in patterns and input data, so that characters that differ only in case match each other.
+Ignore case distinctions in patterns and input data, so that characters that differ only in case match each other. 
+This can be used to search in case we don't care about case sensitivity.
+
 1. This is the case about "Lucayans" in our example. There is no "lucayans" in files, but if we ignore the case, we can find one in "Lucayans".
 ```
 vincentren@ Lab_report_3 % grep -rl "lucayans" > grep-result.txt
@@ -23,7 +25,9 @@ vincentren@ Lab_report_3 % wc grep-result-ign.txt
 ```
 
 ## -v, --invert-match
-Invert the sense of matching, to select non-matching lines.
+Invert the sense of matching, to select non-matching lines. 
+This can be used to get rid of some words, and search the rest without showing these words.
+
 1. From `-i` section, we know that "Lucayans" shows up in `./written_2/travel_guides/berlitz2/Bahamas-History.txt`. If we just grep "Lucayans" in that `berlitz2` folder, the number found would be just 1. However, if we grep "Lucayans" using `-v`, we would found all files in `berlitz2` except `Bahamas-History.txt`.
 ```
 vincentren@ Lab_report_3 % grep -vl "Lucayans" written_2/travel_guides/berlitz2/*.txt > grep-result-invert.txt
@@ -45,7 +49,10 @@ vincentren@ Lab_report_3 % wc grep-result.txt
 ```
 
 ## -n, --line-number
-Prefix each line of output with the 1-based line number within its input file.
+Prefix each line of output with the 1-based line number within its input file. 
+This helps to find the exact line number of searching result. Helps to organize output. 
+Maybe can be applied by `wc` to sort on line number.
+
 1. Using `-n`, we can know the line number of "vista"
 ```
 vincentren@ Lab_report_3 % grep -rn "vista" > grep-result.txt
@@ -71,6 +78,8 @@ vincentren@ Lab_report_3 % cat grep-result.txt
 
 ## -h, --no-filename
 Suppress the prefixing of file names on output.  This is the default when there is only one file (or only standard input) to search.
+This makes output cleaner if we just care about content and don't care about the file name. 
+
 1. Using `-h` to just show the content searching "vista".
 ```
 vincentren@ Lab_report_3 % grep -rh "vista" ./written_2 > grep-result.txt
