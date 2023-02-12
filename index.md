@@ -68,3 +68,26 @@ vincentren@ Lab_report_3 % cat grep-result.txt
 ./written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arrival of Columbus, a peaceful...
 ./written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but...
 ```
+
+## -h, --no-filename
+Suppress the prefixing of file names on output.  This is the default when there is only one file (or only standard input) to search.
+1. Using `-h` to just show the content searching "vista".
+```
+vincentren@ Lab_report_3 % grep -rh "vista" ./written_2 > grep-result.txt
+vincentren@ Lab_report_3 % cat grep-result.txt 
+        unexpected distant vistas will remind you that Dublin is by the sea,
+        rewarded with spectacular vistas can be an exhilarating experience, but
+        ancient port, now silted up. From here, the vista of the whole town can
+        Harrison Stickle and Crinkle Crags — produce some of the finest vistas
+        ...
+```
+
+2. When there is only one file, `h` is the default.
+```
+vincentren@ Lab_report_3 % grep "Lucayans" ./written_2/travel_guides/berlitz2/Bahamas-History.txt > grep-result.txt
+vincentren@ Lab_report_3 % grep  -h "Lucayans" ./written_2/travel_guides/berlitz2/Bahamas-History.txt > grep-result-h.txt
+vincentren@ Lab_report_3 % cat grep-result.txt 
+Centuries before the arrival of Columbus, a peaceful Amerindian people who...
+vincentren@ Lab_report_3 % cat grep-result-h.txt 
+Centuries before the arrival of Columbus, a peaceful Amerindian people who ...
+```
